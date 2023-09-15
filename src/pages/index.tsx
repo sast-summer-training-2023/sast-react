@@ -25,7 +25,7 @@ const BoardScreen = () => {
     const [boardName, setBoardName] = useState("");
     const [refreshing, setRefreshing] = useState(false);
 
-    const timerRef = useRef<undefined | NodeJS.Timer>(undefined);
+    const timerRef = useRef<undefined | NodeJS.Timeout>(undefined);
 
     const router = useRouter();
     const query = router.query;
